@@ -1,4 +1,13 @@
 /* navbar */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+:root {
+  scroll-behavior: smooth;
+}
+
+
 .flex-container-nav{
   display: flex;
 }
@@ -44,7 +53,7 @@
   margin-right: 2%;
 }
 .left1 h1{
-  margin-top: 10%;
+  margin-top: 25%;
 }
 .images{
   width: 100%;
@@ -61,7 +70,6 @@
 }
 
 .right2{
-  margin-left: 3%;
   padding-right: 2%;
 }
 .right2 p{
@@ -69,7 +77,6 @@
 }
 .aboutme{
   border-radius: 5%;
-  margin: 2%;
 }
 
 /* Section3 */
