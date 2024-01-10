@@ -15,7 +15,7 @@ headerTemplate.innerHTML = `
             </div>
             <div id="siteMenu" class="col-md-9 col-sm-12 col-12 menu d-md-block d-lg-block d-xl-block"> 
                 <ul class="contact-info">
-                    <li class="bdr"> <a href="#Exams" onclick="scrollToSection('section1')">TeachingExams</a></li>
+                    <li class="bdr"> <a href="https://blog.cronberry.com/" target="_blank" rel="nofollow">TeachingExams</a></li>
                     <li class="bdr"> <a href="https://blog.cronberry.com/" target="_blank" rel="nofollow">FreeMentoring</a></li>
                     <li class="pr-0 d-md-inline-block d-sm-none">
                         <a class="btn btn-primary" href="https://cloud.cronberry.com/" class="btn btn-default">ContactUs</a>

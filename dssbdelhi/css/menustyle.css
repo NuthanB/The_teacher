@@ -1,0 +1,734 @@
+
+body.open-menu  .over-menu {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  height: 100%;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 10;
+}
+body.open-menu {
+  left: -280px;
+  position: relative;
+}
+body.open-menu > .over-menu {
+  visibility: visible;
+  opacity: 1;
+}
+body.open-menu .menu-container {
+  right: 0 !important;
+}
+
+body.open-menu #header{
+  left: -280px;
+  background: transparent;
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+header .desk-menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+header .desk-menu .box-menu {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+header .desk-menu .menu-container {
+  float: left;
+}
+header .desk-menu .menu-container .menu-head,
+header .desk-menu .menu-container .menu-foot {
+  width: 100%;
+  float: left;
+  display: none;
+  z-index: 2;
+}
+
+
+header .desk-menu .menu-container .menu-head .e1 img {
+  width: 29px;
+  float: left;
+  height: 29px;
+}
+header .desk-menu .menu-container .menu-head .client {
+  color: #FFF;
+  float: right;
+}
+
+header .desk-menu .menu-container .menu-head .client span {
+  text-transform: uppercase;
+  padding: 5px 42px 5px 0;
+  position: relative;
+  line-height: 100%;
+  font-size: 9px;
+  display: block;
+}
+header .desk-menu .menu-container .menu-head .client i {
+  position: absolute;
+  font-size: 30px;
+  right: 0;
+  top: 0;
+}
+header .desk-menu .menu-container .menu-foot {
+  position: absolute;
+  bottom: 0;
+  padding: 15px 0;
+}
+
+header .desk-menu .menu-container .menu {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 0px 0 0;
+  list-style: none;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+li.menu-item.menu-item-has-children:hover::after {content: '';
+  background: #FC3A52;
+  height: 5px;position: absolute;left: 0px;bottom: 0px;width: 100%;
+  border-radius: 10px;}
+li.menu-item.menu-item-has-children li:hover::after{display: none;}
+
+
+header .desk-menu .menu-container .menu li.back {
+  display: none;
+}
+header .desk-menu .menu-container .menu > li {
+  -webkit-transition: all 0.33s ease;
+  -moz-transition: all 0.33s ease;
+  -ms-transition: all 0.33s ease;
+  -o-transition: all 0.33s ease;
+  transition: all 0.33s ease;
+  margin: 0 27px 0 0px;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  overflow: inherit;
+}
+header .desk-menu .menu-container .menu > li a {
+  position: relative;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children > a {
+  padding: 30px 33px 30px 0px;
+  position: relative;
+  font-size: 16px;
+  line-height: 19px;
+  
+}
+li.lastmenu .loginbtn-header a {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgb(255, 255, 255);
+  min-width: 137px;
+  display: inline-block;
+  background: rgb(49, 43, 71);
+  border-radius: 8px;
+  padding: 10px 13px!important;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children > a::before, header .desk-menu .menu-container .menu > li.menu-item-has-children > a::after {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 10px;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children > a::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 12px;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children > a::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 6px;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu {
+  box-shadow: 1px 2px 4px rgba(46, 61, 73, 0.2);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-overflow-scrolling: touch;
+  min-width: 200px;
+  position: absolute;
+  list-style: none;
+  background-color: rgb(49, 43, 71);
+  padding: 0;
+  float: left;
+  display: table;
+  left: 0;
+  width: 100%;
+  float: left;
+  display: none;
+
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li {
+  width: 100%;
+  -webkit-transition: all 0.33s ease;
+  -moz-transition: all 0.33s ease;
+  -ms-transition: all 0.33s ease;
+  -o-transition: all 0.33s ease;
+  transition: all 0.33s ease;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li > a {
+  border-bottom: 1px solid #3d3b44;
+    padding: 10px 20px;
+
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li .sub-menu {
+  display: none;
+}
+
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::before, header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::after {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #4e4e4e;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 7px;
+  top: 24px;
+  background-color: #fff;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::before {
+  transform: rotate(45deg);
+  right: 6px;
+  top: 19px;
+  background-color: #fff;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::after {
+  transform: rotate(-45deg);
+  right: 6px;
+  top: 23px;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children:hover > a {
+  display: block;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li:hover > a {
+  color: #FC3A52;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li:hover > a::before {
+  -webkit-transform: rotate(142deg);
+  -moz-transform: rotate(142deg);
+  -ms-transform: rotate(142deg);
+  -o-transform: rotate(142deg);
+  transform: rotate(142deg);
+  top: 23px;
+  background-color: #fff;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li:hover > a::after {
+  -webkit-transform: rotate(42deg);
+  -moz-transform: rotate(42deg);
+  -ms-transform: rotate(42deg);
+  -o-transform: rotate(42deg);
+  transform: rotate(42deg);
+  right: 11px;
+  background-color: #fff;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu .sub-menu {
+  left: 100%;
+  margin-top: -43px;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children a {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+header .desk-menu .menu-container .menu > li.menu-item-has-children a:hover {
+  margin-top: 0;
+}
+header .desk-menu .menu-container .menu > li.line {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 0px;
+  pointer-events: none;
+  border: 3px solid #FC3A52;
+  background: #FC3A52;
+  -webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1);
+  -webkit-transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+  transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22);
+  opacity: 0;
+  display: block;
+  border-radius: 10px;
+}
+header .desk-menu .menu-container .menu > li:hover > a {
+  color: #FC3A52;
+}
+header .desk-menu .menu-container .menu > li:hover > a::before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  width: 10px;
+  right: 12px;
+  background-color: #FC3A52;
+
+}
+header .desk-menu .menu-container .menu > li:hover > a::after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 10px;
+  right: 7px;
+  background-color: #FC3A52;
+}
+header .desk-menu .menu-container .menu > li:hover.menu-item-has-children .sub-menu {
+  display: block;
+}
+header .hamburger-menu {
+  display: none;
+}
+header.small::before {
+  box-shadow: 0px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  height: 100%;
+}
+header.small .desk-menu .menu-container .menu > li.menu-item-has-children > a::before, header.small .desk-menu .menu-container .menu > li.menu-item-has-children > a::after {
+  background-color: #4e4e4e;
+}
+header.small .desk-menu .logo-adn {
+  margin-top: 14px;
+}
+header.small .desk-menu .logo-adn a {
+  background-image: url("../img/empresa-1-logo.svg");
+  height: 30px;
+  width: 140px;
+}
+header.small .desk-menu .box-menu {
+  padding: 0;
+}
+header.small .desk-menu .box-menu ul li a {
+  color: #4e4e4e;
+}
+@media (max-width: 991px) {
+  
+
+  body.open-menu{overflow: hidden;}
+  li.menu-item.menu-item-has-children:hover::after{display: none;}
+header .desk-menu .menu-container .menu li.lastmenu a{border-bottom: 0px;}
+
+  header .desk-menu{display: block;}
+  body.open-menu #header{border-bottom: 0px!important; height: 100%;}
+   
+
+  header .desk-menu .menu-container .menu-header-container ul{display: block;}
+  body.open-menu .hamburger-menu{right: 260px;}
+  header .hamburger-menu {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    right: 0;
+    z-index: 11;
+  }
+  header .hamburger-menu span {
+    text-transform: uppercase;
+    left: calc(-100% + -5px);
+    padding: 8px 9px 8px 0;
+    top: calc(50% - 18px);
+    position: absolute;
+    font-size: 13px;
+    color: #FFF;
+  }
+  header .hamburger-menu .bar,
+header .hamburger-menu .bar::after,
+header .hamburger-menu .bar::before {
+    width: 25px;
+    height: 2px;
+  }
+  header .hamburger-menu .bar {
+    position: relative;
+    -webkit-transform: translateY(25px);
+    -moz-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    -o-transform: translateY(25px);
+    transform: translateY(25px);
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    background: #fff;
+    top: -7px;
+  }
+  body.dark-mode.open-menu header .hamburger-menu .bar::before, body.dark-mode.open-menu header .hamburger-menu .bar::after{ background: #fff;}
+  body.open-menu header .hamburger-menu .bar::before, body.open-menu header .hamburger-menu .bar::after{  background: #4e4e4e;}
+
+  header .hamburger-menu .bar::before, header .hamburger-menu .bar::after {
+    position: absolute;
+    background: #fff;
+    content: "";
+    left: 0;
+    border-radius: 5px;
+  }
+  header .hamburger-menu .bar::before {
+    bottom: 10px;
+    -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  header .hamburger-menu .bar::after {
+    top: 10px;
+    -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  header .hamburger-menu .bar.animate {
+    background: rgba(255, 255, 255, 0);
+  }
+  header .hamburger-menu .bar.animate::after {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  header .hamburger-menu .bar.animate::before {
+    bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -ms-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  header .desk-menu .box-menu ul li a {
+    color: #FFF !important;
+    border-bottom: 1px solid #3d3b44;
+  }
+  header .desk-menu .menu-container {
+    background-color: #0C0425;
+    position: fixed;
+    min-height: 100%;
+    width: 280px;
+    right: -280px;
+    top: 0;
+    height: 90vh;
+    opacity: 0;
+  }
+  body.open-menu header .desk-menu .menu-container{opacity: 1;}
+
+  header .desk-menu .menu-container .menu-header-container {
+    position: relative;
+    float: left;
+  }
+  header .desk-menu .menu-container .menu-header-container ul {
+    padding: 10px !important;
+    float: left;
+  }
+  header .desk-menu .menu-container .menu {
+    margin: 0;
+  }
+  header .desk-menu .menu-container .menu li.back {
+    position: relative;
+    display: block;
+  }
+  header .desk-menu .menu-container .menu li.back a {
+    padding: 12px 12px 12px 35px !important;
+  }
+  header .desk-menu .menu-container .menu li.back a::before, header .desk-menu .menu-container .menu li.back a::after {
+    background-color: #4e4e4e;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 7px;
+    top: 23px;
+  }
+  header .desk-menu .menu-container .menu li.back a::before {
+    -webkit-transform: rotate(-45deg) !important;
+    -moz-transform: rotate(-45deg) !important;
+    -ms-transform: rotate(-45deg) !important;
+    -o-transform: rotate(-45deg) !important;
+    transform: rotate(-45deg) !important;
+    top: 20px !important;
+    right: inherit !important;
+    left: 15px !important;
+  }
+  header .desk-menu .menu-container .menu li.back a::after {
+    -webkit-transform: rotate(45deg) !important;
+    -moz-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    -o-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+    top: 24px !important;
+    left: 15px !important;
+  }
+  header .desk-menu .menu-container .menu li.line {
+    display: none !important;
+  }
+  header .desk-menu .menu-container .menu > li {
+    width: 100%;
+    float: left;
+    margin: 0;
+    text-align: left;
+  }
+  header .desk-menu .menu-container .menu > li a {
+    font-size: 16px;
+    line-height: 19px;
+    color:#fff;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children {
+    position: initial;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children a {
+    padding: 12px;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children a::before, header .desk-menu .menu-container .menu > li.menu-item-has-children a::after {
+    background: #fff;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children a::before {
+    right: 6px !important;
+    top: 15px !important;
+    width: 7px !important;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children a::after {
+    top: 19px !important;
+    width: 7px !important;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu {
+    box-shadow: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: block !important;
+    background-color: #0C0425;
+    z-index: 1;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu .sub-menu {
+    margin-top: 0;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu.open-sub {
+    left: 0%;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::before, header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::after {
+    background-color: #fff;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::before {
+    -webkit-transform: rotate(145deg) !important;
+    -moz-transform: rotate(145deg) !important;
+    -ms-transform: rotate(145deg) !important;
+    -o-transform: rotate(145deg) !important;
+    transform: rotate(145deg) !important;
+    right: 20px !important;
+    top: 22px !important;
+    width: 7px !important;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::after {
+    -webkit-transform: rotate(45deg) !important;
+    -moz-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    -o-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+    right: 20px !important;
+    width: 7px !important;
+  }
+  header .desk-menu .menu-container .menu > li:hover a:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 6px;
+    top: 22px;
+  }
+  header .desk-menu .menu-container .menu > li:hover a::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 6px;
+    top: 26px;
+  }
+  header .desk-menu .menu-container .menu-head {
+    display: block;
+  }
+  header .desk-menu .menu-container .menu-foot {
+    display: block;
+  }
+  header.small .hamburger-menu {
+    top: 31px;
+  }
+  header.small .hamburger-menu span {
+    color: #4e4e4e;
+  }
+  header.small .hamburger-menu .bar {
+    background: #4e4e4e;
+  }
+  header.small .hamburger-menu .bar::before, header.small .hamburger-menu .bar::after {
+    background: #4e4e4e;
+  }
+  header.small .hamburger-menu .bar.animate {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+@media (max-width: 767px) {
+  header .desk-menu .menu-container .menu li a {
+    padding: 8px 12px;
+  }
+  header .desk-menu .menu-container .menu li.back a {
+    padding: 8px 12px 8px 35px !important;
+  }
+  header .desk-menu .menu-container .menu li.back a::before {
+    top: 17px !important;
+  }
+  header .desk-menu .menu-container .menu li.back a::after {
+    top: 20px !important;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children a {
+    padding: 10px 12px;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children a::before {
+    top: 16px;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children a::after {
+    top: 22px;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li > a {
+    padding: 11px 12px;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::before {
+    top: 18px;
+  }
+  header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li.menu-item-has-children > a::after {
+    top: 22px;
+  }
+}
+@media (max-width: 481px) {
+  header .desk-menu .logo-adn a {
+    width: 100px;
+    height: 30px;
+  }
+  header .hamburger-menu {
+    top: 0px;
+    right: 0;
+  }
+  header .hamburger-menu .bar,
+header .hamburger-menu .bar::after,
+header .hamburger-menu .bar::before {
+    width: 25px;
+    height: 3px;
+  }
+  header .hamburger-menu .bar::before {
+    bottom: 9px;
+  }
+  header .hamburger-menu .bar::after {
+    top: 9px;
+  }
+  header.small .desk-menu .logo-adn a {
+    width: 100px;
+    height: 30px;
+  }
+}
+@media (max-height: 550px) {
+  header .desk-menu .menu-container .menu-foot hr,
+header .desk-menu .menu-container .menu-foot address {
+    display: none;
+  }
+}
+
+.resize-message {
+  margin: 40vh auto 0;
+  display: table;
+}
+
+.resize-message span {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: #666;
+}
+
+.resize-message span i {
+  font-size: 30px;
+}
