@@ -9,16 +9,16 @@ headerTemplate.innerHTML = `
             <div class="col-md-3 col-sm-5 col-6">
                 <div class="logo flex">
                 <a href="/">
-                    <img src="images/logo.png" alt="Cronberry" title="Cronberry" style="width: 60px;"  /><span style="font-size:x-large">TheTEACHER</p>
+                    <img src="images/mainlogo.png" alt="Cronberry" title="Cronberry" style="width: 50%; margin-top:2%;" /><span style="font-size:x-large"></p>
                 </a>
                 </div>
             </div>
             <div id="siteMenu" class="col-md-9 col-sm-12 col-12 menu d-md-block d-lg-block d-xl-block"> 
                 <ul class="contact-info">
-                    <li class="bdr"> <a href="#Exams" onclick="scrollToSection('section1')">TeachingExams</a></li>
-                    <li class="bdr"> <a href="https://blog.cronberry.com/" target="_blank" rel="nofollow">FreeMentoring</a></li>
+                    <li class="bdr"> <a href="./grid.html" onclick="scrollToSection('section1')">Teaching Exams</a></li>
+                    <li class="bdr"> <a href="" target="_blank" rel="nofollow">Free Mentoring</a></li>
                     <li class="pr-0 d-md-inline-block d-sm-none">
-                        <a class="btn btn-primary" href="https://cloud.cronberry.com/" class="btn btn-default">ContactUs</a>
+                        <a class="btn btn-primary" href="" class="btn btn-default">Contact Us</a>
                     </li>
                 </ul>
             </div>
