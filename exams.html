@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Exam Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            background-image: url('./images/url-dots.svg'); /* Add your background image URL here */
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #e74c3c;
+            margin-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .details-row {
+            display: none;
+        }
+
+        .arrow {
+            cursor: pointer;
+            color: #e74c3c;
+        }
+
+        /* Watermark */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('watermark.png'); /* Add your watermark image URL here */
+            background-size: 300px; /* Adjust the size of the watermark */
+            background-repeat: no-repeat;
+            background-position: center center;
+            transform: translate(-50%, -50%);
+            opacity: 0.1; /* Adjust the opacity of the watermark */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Teacher's Exam Page</h1>
+    </header>
+
+    <section>
+        <div class="exam">
+            <h2>DSSB DELHI <span class="arrow" onclick="toggleDetails('DSSB')">▼</span></h2>
+            <div class="details-row" id="DSSB-details">
+                <p>he Delhi Subordinate Services Selection Board (DSSSB) conducts recruitment exams for various posts in departments under the Government of NCT of Delhi. These exams are held for positions like teaching, clerical, nursing, engineering, and more.</p>
+                <table>
+                    <tr>
+                        <th>Exam Name</th>
+                        <td>DSSB DELHI</td>
+                    </tr>
+                    <tr>
+                        <th>Exam Details</th>
+                        <td>Your Exam Details 1</td>
+                    </tr>
+                    <tr>
+                        <th>Syllabus</th>
+                        <td>Your Syllabus 1</td>
+                    </tr>
+                    <tr>
+                        <th>Exam Dates</th>
+                        <td>Your Exam Dates 1</td>
+                    </tr>
+                    <!-- Add more rows for additional information as needed -->
+                </table>
+            </div>
+        </div>
+
+        <div class="exam">
+            <h2>CTET <span class="arrow" onclick="toggleDetails('CTET')">▼</span></h2>
+            <div class="details-row" id="CTET-details">
+                <p>The Central Teacher Eligibility Test (CTET) is an entrance exam conducted by the Central Board of Secondary Education (CBSE) in India. It's mandatory for individuals aspiring to become teachers in government schools (from Class 1 to Class 8). </p>
+                <table>
+                    <tr>
+                        <th>Exam Name</th>
+                        <td>CTET</td>
+                    </tr>
+                        <th>Exam Details</th>
+                        <td>Paper 1 is for candidates who intend to teach classes I to V (Primary stage).</td>
+                    </tr>
+                    <tr>
+                        <th>Syllabus</th>
+                        <td>Child Development and Pedagogy ,
+                           Language I (usually the medium of instruction), 
+                           Language II (chosen from a list other than Language I), 
+                           Mathematics, 
+                           Environmental Studies</td>
+                    </tr>
+                    <tr>
+                        <th>Total Questions</th>
+                        <td> 150 Multiple Choice Questions (MCQs), 30 questions from each section.</td>
+                    </tr>
+                    <tr>
+                        <th>Exam Duration</th>
+                        <td> 2 hours and 30 minutes.</td>
+                    </tr>
+                    <!-- Add more rows for additional information as needed -->
+                </table>
+            </div>
+        </div>
+        <div class="exam">
+            <h2>Exam 2 <span class="arrow" onclick="toggleDetails('exam2')">▼</span></h2>
+            <div class="details-row" id="exam2-details">
+                <p>This page provides information about an upcoming exam conducted by Teacher's Name.</p>
+                <table>
+                    <tr>
+                        <th>Exam Name</th>
+                        <td>Your Exam Name 2</td>
+                    </tr>
+                    <tr>
+                        <th>Exam Details</th>
+                        <td>Your Exam Details 2</td>
+                    </tr>
+                    <tr>
+                        <th>Syllabus</th>
+                        <td>Your Syllabus 2</td>
+                    </tr>
+                    <tr>
+                        <th>Exam Dates</th>
+                        <td>Your Exam Dates 2</td>
+                    </tr>
+                    <!-- Add more rows for additional information as needed -->
+                </table>
+            </div>
+        </div>
+        <div class="exam">
+            <h2>Exam 2 <span class="arrow" onclick="toggleDetails('exam2')">▼</span></h2>
+            <div class="details-row" id="exam2-details">
+                <p>This page provides information about an upcoming exam conducted by Teacher's Name.</p>
+                <table>
+                    <tr>
+                        <th>Exam Name</th>
+                        <td>Your Exam Name 2</td>
+                    </tr>
+                    <tr>
+                        <th>Exam Details</th>
+                        <td>Your Exam Details 2</td>
+                    </tr>
+                    <tr>
+                        <th>Syllabus</th>
+                        <td>Your Syllabus 2</td>
+                    </tr>
+                    <tr>
+                        <th>Exam Dates</th>
+                        <td>Your Exam Dates 2</td>
+                    </tr>
+                    <!-- Add more rows for additional information as needed -->
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleDetails(examId) {
+            var detailsRow = document.getElementById(examId + '-details');
+            var arrow = detailsRow.previousElementSibling.querySelector('.arrow');
+            
+            if (detailsRow.style.display === 'none') {
+                detailsRow.style.display = 'block';
+                arrow.textContent = '▲';
+            } else {
+                detailsRow.style.display = 'none';
+                arrow.textContent = '▼';
+            }
+        }
+    </script>
+
+</body>
+</html>
