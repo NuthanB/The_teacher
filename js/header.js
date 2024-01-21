@@ -16,7 +16,7 @@ headerTemplate.innerHTML = `
             <div id="siteMenu" class="col-md-9 col-sm-12 col-12 menu d-md-block d-lg-block d-xl-block"> 
                 <ul class="contact-info">
                     <li class="bdr"> <a href="./grid.html" onclick="scrollToSection('section1')">Teaching Exams</a></li>
-                    <li class="bdr"> <a href="" target="_blank" rel="nofollow">Free Mentoring</a></li>
+                    <li class="bdr"> <a href="./mentoring.html" target="_blank" rel="nofollow">Free Mentoring</a></li>
                     <li class="pr-0 d-md-inline-block d-sm-none">
                         <a class="btn btn-primary" href="" class="btn btn-default">Contact Us</a>
                     </li>
