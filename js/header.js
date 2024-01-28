@@ -9,7 +9,7 @@ headerTemplate.innerHTML = `
             <div class="col-md-3 col-sm-5 col-6">
                 <div class="logo flex">
                 <a href="/">
-                    <img src="images/mainlogo.png" alt="Cronberry" title="Cronberry" style="width: 50%; margin-top:2%;" /><span style="font-size:x-large"></p>
+                <img src="images/mainlogo.png">
                 </a>
                 </div>
             </div>
